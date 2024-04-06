@@ -1,9 +1,9 @@
 /*
 Colors
 
-ligh-green: #7ed56f
+light-green: #58c445d8
 medium-green: #55c57a
-dark-green: #28b485
+dark-green: #0da06fcc
 
 */
 
@@ -14,15 +14,58 @@ dark-green: #28b485
 }
 
 body{
-    font-family: "montserrat" sans-serif;
+    font-family: "lato" sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
     color: #777;
+    padding: 30px;
 }
 
 .header{
     height: 95vh;
-    background-image: url(assets/header-bg.jpg);
+    background-image: linear-gradient(to right bottom, #58c445d8, #0da06fcc), url(assets/header-bg.jpg);
     background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo{
+    height: 35px;
+    filter: brightness(0) invert(100%);
+}
+
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "lato", sans-serif;
+}
+
+.outdoors{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+}
+
+.whereLifeHappens{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 17.5px;
 }
